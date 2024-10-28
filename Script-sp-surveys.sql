@@ -29,10 +29,7 @@ DELIMITER ;
 DELIMITER //
 CREATE PROCEDURE procSelectSurveyDDL()
 BEGIN
-    SELECT 
-        en_id, 
-        en_descripcion_pregunta 
-    FROM tbl_encuesta;
+    SELECT en_id, en_descripcion_pregunta FROM tbl_encuesta;
 END//
 DELIMITER ;
 -- ACTUALIZAR
