@@ -14,7 +14,13 @@ begin
 select cat_id,cat_nombre,cat_descripcion from tbl_categorias;
 end//
 DELIMITER ;
-
+-- Mostrar el id y el nombre de la categoria
+DELIMITER //
+create procedure procSelectCategoryDDL()
+begin
+select cat_id,cat_nombre from tbl_categorias;
+end//
+DELIMITER ;
 -- Actualizar
 DELIMITER // 
 CREATE PROCEDURE procUpdateCategory(
