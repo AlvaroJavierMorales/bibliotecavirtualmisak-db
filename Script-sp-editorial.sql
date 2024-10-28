@@ -14,7 +14,13 @@ begin
 select edi_nombre, edi_ciudad, edi_telefono, edi_correo from tbl_editorial;
 end//
 DELIMITER ;
-
+-- Mostrar ubicamente el id y el nombre de la editorial
+DELIMITER //
+create procedure procSelectEditorialDDL()
+begin
+select edi_id, edi_nombre  from tbl_editorial;
+end//
+DELIMITER ;
 -- Actualizar
 DELIMITER // 
 CREATE PROCEDURE procUpdateEditorial(
