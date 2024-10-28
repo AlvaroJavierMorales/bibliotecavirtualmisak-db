@@ -21,6 +21,18 @@ BEGIN
 END //
 DELIMITER ;
 
+
+-- MOSTRAR por DDL ---------------------------------------
+
+DELIMITER //
+CREATE PROCEDURE procSelectPurchase_requestDDL()
+BEGIN
+    SELECT solic_id, solic_ticket FROM tbl_solicitud_compra;
+END //
+DELIMITER ;
+
+
+
 -- ACTUALIZAR -------------------------------------------
 
 DELIMITER //
