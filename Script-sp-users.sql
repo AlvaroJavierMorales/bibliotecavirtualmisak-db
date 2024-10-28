@@ -42,7 +42,15 @@ BEGIN
     FROM tbl_usuarios;
 END//
 DELIMITER ;
-
+-- Mostrar unicamente el id y el nombre del usuario
+DELIMITER //
+CREATE PROCEDURE procSelectUsersDDL()
+BEGIN
+    SELECT 
+        usu_id, concat(usu_nombre, ' ',usu_apellido) As nombre
+    FROM tbl_usuarios;
+END//
+DELIMITER ;
 -- ACTUALIZAR 
 DELIMITER //
 CREATE PROCEDURE procUpdateUsers(
