@@ -14,7 +14,7 @@ begin
 select edi_nombre, edi_ciudad, edi_telefono, edi_correo from tbl_editorial;
 end//
 DELIMITER ;
--- Mostrar ubicamente el id y el nombre de la editorial
+-- ddl id y nombre Editorial
 DELIMITER //
 create procedure procSelectEditorialDDL()
 begin
