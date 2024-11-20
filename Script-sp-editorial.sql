@@ -11,7 +11,7 @@ DELIMITER ;
 DELIMITER //
 create procedure procSelectEditorial()
 begin
-select edi_nombre, edi_ciudad, edi_telefono, edi_correo from tbl_editorial;
+select edi_id, edi_nombre, edi_ciudad, edi_telefono, edi_correo from tbl_editorial;
 end//
 DELIMITER ;
 -- ddl id y nombre Editorial
