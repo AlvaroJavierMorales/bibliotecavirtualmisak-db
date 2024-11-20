@@ -56,3 +56,6 @@ BEGIN
     WHERE en_id = v_en_id AND tbl_usuarios_usu_id = v_usu_id;
 END//
 DELIMITER ;
+
+
+

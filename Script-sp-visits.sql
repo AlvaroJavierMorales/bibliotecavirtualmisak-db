@@ -18,16 +18,6 @@ END //
 
 DELIMITER ;
 
--- Mostrar por DDL
-DELIMITER //
-CREATE PROCEDURE procSelectVisitsDDL() 
-BEGIN 
-Select vis_id, vis_fecha_ingreso
-FROM tbl_visitas; 
-END //
-
-DELIMITER ;
-
 -- Actualizar
 DELIMITER // 
 CREATE PROCEDURE procUpdateVisits( IN v_vis_id INT,  IN v_usu_id INT, IN vis_fecha_ingreso date, IN vis_duracion time) 
