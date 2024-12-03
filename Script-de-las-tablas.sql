@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `BIBLIOTECA-VIRTUAL-MISAK`.`tbl_usuarios` (
   `usu_contrasena` TEXT NOT NULL,
   `usu_salt` TEXT NOT NULL,
   `usu_rol` ENUM('Administrador', 'Docente', 'Estudiante') NOT NULL,
-  `usu_nivel_estudios` ENUM('Sin educativo', 'Básica Primaria', 'Básica Secundaria', 'Bachillerato', 'Formación Profesional', 'Posgrado') NOT NULL,
+  `usu_nivel_estudios` ENUM('Primaria', 'Secundaria', 'Bachillerato', 'Técnico', 'Tecnólogo', 'Pregrado', 'Especialización', 'Maestría', 'Doctorado', 'Postdoctorado') NOT NULL,
   PRIMARY KEY (`usu_id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
